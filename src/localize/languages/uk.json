@@ -14,6 +14,7 @@
         "disable_menu": "Прибрати меню",
         "disable_battery_warning": "Прибрати попередження про акумулятор",
         "disable_buttons": "Прибрати кнопки плюс/мінус",
+        "disable_all_buttons": "Відключити всі кнопки",
         "show_temperature_control": "Показати контроль температури",
         "collapsible_controls": "Згортані елементи керування",
         "show_current_as_primary": "Показувати поточну температуру як основну",
@@ -21,11 +22,19 @@
         "prevent_interaction_on_scroll": "Запобігати взаємодії при прокручуванні",
         "disable_connection_lost_warning": "Вимкнути попередження про втрату з'єднання",
         "disable_degraded_warning": "Вимкнути попередження про деградований режим",
+        "debug_battery": "Debug: Показати попередження про батарею",
+        "debug_connection": "Debug: Показати попередження про втрату зв'язку",
+        "debug_degraded": "Debug: Показати попередження про обмежений режим",
         "low_battery_threshold": "Поріг попередження про низький заряд (%)",
         "section_display": "Відображення",
+        "section_colors": "Кольори",
+        "section_colors_helper": "Перевизначити кольори, які використовуються для режимів HVAC та передустановок. Виберіть колір теми або очистіть поле вибору, щоб відновити значення за замовчуванням.",
         "section_interaction": "Взаємодія",
         "section_features": "Функції",
-        "section_warnings": "Попередження"
+        "section_warnings": "Попередження",
+        "section_sensors": "Зовнішні датчики",
+        "window_sensor": "Датчик відкриття вікна",
+        "humidity_sensor": "Датчик вологості"
       }
     }
   },
@@ -37,6 +46,9 @@
     "heating": "Опалення",
     "cooling_off": "Охолодження вимкнено",
     "heating_off": "Опалення вимкнено",
+    "degraded_mode": "Обмежений режим",
+    "connection_lost": "З'єднання втрачено: {name}",
+    "low_battery": "Низький заряд батареї: {name}",
     "window_closed": "Вікно закрите"
   }
 }
