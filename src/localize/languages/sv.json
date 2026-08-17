@@ -14,6 +14,7 @@
         "disable_menu": "Inaktivera meny",
         "disable_battery_warning": "Inaktivera batterivarning",
         "disable_buttons": "Inaktivera plus/minus knappar",
+		"disable_slider": "Inaktivera skjutreglage",
         "show_temperature_control": "Visa temperaturkontroll",
         "collapsible_controls": "Ihopfällbara kontroller",
         "show_current_as_primary": "Visa aktuell temperatur som primär",

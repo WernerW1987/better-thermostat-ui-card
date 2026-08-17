@@ -14,6 +14,7 @@
         "disable_menu": "Прибрати меню",
         "disable_battery_warning": "Прибрати попередження про акумулятор",
         "disable_buttons": "Прибрати кнопки плюс/мінус",
+		"disable_slider": "Вимкнути повзунок"
         "show_temperature_control": "Показати контроль температури",
         "collapsible_controls": "Згортані елементи керування",
         "show_current_as_primary": "Показувати поточну температуру як основну",
