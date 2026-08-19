@@ -14,6 +14,7 @@
         "disable_menu": "Desativar menu",
         "disable_battery_warning": "Desativar aviso de bateria",
         "disable_buttons": "Desativar botões de mais/menos",
+		"disable_slider": "Desativar controlo deslizante",
         "show_temperature_control": "Mostrar controlo de temperatura",
         "collapsible_controls": "Controlos recolhíveis",
         "show_current_as_primary": "Mostrar temperatura atual como principal",

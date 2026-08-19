@@ -14,6 +14,7 @@
         "disable_menu": "Desactivar menú",
         "disable_battery_warning": "Desactivar advertència de bateria",
         "disable_buttons": "Desactivar botons de més/menys",
+		"disable_slider": "Desactivar el lliscador",
         "show_temperature_control": "Mostra el control de temperatura",
         "collapsible_controls": "Controls plegables",
         "show_current_as_primary": "Mostra la temperatura actual com a principal",

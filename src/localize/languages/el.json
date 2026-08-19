@@ -14,6 +14,7 @@
         "disable_menu": "Απενεργοποίηση μενού",
         "disable_battery_warning": "Απενεργοποίηση προειδοποίησης μπαταρίας",
         "disable_buttons": "Απενεργοποίηση κουμπιών Plus/Minus",
+		"disable_slider": "Απενεργοποίηση ρυθμιστικού",
         "show_temperature_control": "Εμφάνιση ελέγχου θερμοκρασίας",
         "collapsible_controls": "Πτυσσόμενα στοιχεία ελέγχου",
         "show_current_as_primary": "Εμφάνιση τρέχουσας θερμοκρασίας ως κύρια",

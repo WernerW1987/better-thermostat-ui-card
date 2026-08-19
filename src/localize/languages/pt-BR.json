@@ -13,6 +13,7 @@
         "disable_menu": "Desabilitar menu",
         "disable_battery_warning": "Desabilitar aviso de bateria",
         "disable_buttons": "Desabilitar botões mais/menos",
+		"disable_slider": "Desabilitar controle deslizante",
         "show_current_as_primary": "Mostrar temperatura atual como principal",
         "show_secondary": "Mostrar informações secundárias",
         "prevent_interaction_on_scroll": "Prevenir interação ao rolar",

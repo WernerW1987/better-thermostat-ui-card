@@ -14,6 +14,7 @@
         "disable_menu": "Deaktiver meny",
         "disable_battery_warning": "Deaktiver batterivarsel",
         "disable_buttons": "Deaktiver pluss/minus knapper",
+		"disable_slider": "Deaktiver skyvekontroll",
         "show_temperature_control": "Vis temperaturkontroll",
         "collapsible_controls": "Sammenleggbare kontroller",
         "show_current_as_primary": "Vis nåværende temperatur som primær",

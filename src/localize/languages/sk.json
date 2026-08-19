@@ -14,6 +14,7 @@
         "disable_menu": "Zakázať menu",
         "disable_battery_warning": "Zakázať upozornenie na batériu",
         "disable_buttons": "Zakázať plus/mínus tlačidlá",
+		"disable_slider": "Zakázať posuvník",
         "show_temperature_control": "Zobraziť ovládanie teploty",
         "collapsible_controls": "Skladateľné ovládanie",
         "show_current_as_primary": "Zobraziť aktuálnu teplotu ako hlavnú",

@@ -13,6 +13,7 @@
         "disable_menu": "Isključi prikaz izbornika",
         "disable_battery_warning": "Isključi upozorenje baterije",
         "disable_buttons": "Isključi prikaz plus/minus gumbi",
+		"disable_slider": "Isključi klizni regulator",
         "show_current_as_primary": "Prikaži trenutnu temperaturu kao primarnu",
         "show_secondary": "Prikaži sekundarne informacije",
         "prevent_interaction_on_scroll": "Spriječi interakciju pri pomicanju",
