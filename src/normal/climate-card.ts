@@ -606,6 +606,7 @@ export class BetterThermostatUINormalCard
           .max=${this._max}
           .step=${this._step}
           .current=${stateObj.attributes.current_temperature}
+		  .disabled=${this._config!.disable_slider}
           @low-changed=${this._lowChanged}
           @low-changing=${this._lowChanging}
           @high-changed=${this._highChanged}
