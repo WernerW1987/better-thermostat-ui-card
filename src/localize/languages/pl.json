@@ -15,6 +15,7 @@
         "disable_menu": "Wyłącz menu",
         "disable_battery_warning": "Wyłącz ostrzeżenie o baterii",
         "disable_buttons": "Wyłącz przyciski plus/minus",
+		"disable_slider": "Wyłącz suwak",
         "disable_all_buttons": "Wyłącz wszystkie przyciski",
         "show_temperature_control": "Pokaż suwak temperatury",
         "collapsible_controls": "Rozwijane menu ustawień",

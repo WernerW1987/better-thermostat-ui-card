@@ -14,6 +14,7 @@
         "disable_menu": "Деактивиране на менюто",
         "disable_battery_warning": "Деактивиране на предупреждение за батерията",
         "disable_buttons": "Деактивиране на бутоните плюс/минус",
+		"disable_slider": "Деактивиране на плъзгача",
         "show_temperature_control": "Показване на контрол на температурата",
         "collapsible_controls": "Сгъваеми контроли",
         "show_current_as_primary": "Показване на текущата температура като основна",

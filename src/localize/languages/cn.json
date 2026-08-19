@@ -15,6 +15,7 @@
         "disable_menu": "禁用菜单",
         "disable_battery_warning": "禁用电池警告",
         "disable_buttons": "禁用加/减按钮",
+		"disable_slider": "禁用滑块",
         "disable_all_buttons": "禁用所有按钮",
         "show_temperature_control": "显示温度控制",
         "collapsible_controls": "可折叠控制",

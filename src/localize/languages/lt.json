@@ -10,6 +10,7 @@
         "disable_menu": "Išjungti meniu",
         "disable_battery_warning": "Išjungti baterijos pranešimą",
         "disable_buttons": "Nerodyti plius/minus mygtukų",
+		"disable_slider": "Išjungti slankiklį",
         "disable_humidity": "Išjungti drėgmės rodymą",
         "show_temperature_control": "Rodyti temperatūros valdymą",
         "collapsible_controls": "Sulankstomi valdikliai",

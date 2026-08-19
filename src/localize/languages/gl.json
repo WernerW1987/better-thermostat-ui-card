@@ -11,6 +11,7 @@
         "disable_menu": "Desactivar menú",
         "disable_battery_warning": "Desactivar alerta de batería",
         "disable_buttons": "Desactivar botóns máis/menos",
+		"disable_slider": "Desactivar desprazador",
         "show_temperature_control": "Mostrar control de temperatura",
         "collapsible_controls": "Controis pregables",
         "disable_connection_lost_warning": "Desactivar aviso de perda de conexión",

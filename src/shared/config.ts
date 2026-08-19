@@ -19,6 +19,7 @@ export type SharedBtCardConfig = {
   show_current_as_primary?: boolean;
   show_secondary?: boolean;
   disable_buttons?: boolean;
+  disable_slider?: boolean;
   disable_all_buttons?: boolean;
   disable_menu?: boolean;
   prevent_interaction_on_scroll?: boolean;
@@ -44,6 +45,7 @@ export const sharedBtConfigStruct = object({
   show_current_as_primary: optional(boolean()),
   show_secondary: optional(boolean()),
   disable_buttons: optional(boolean()),
+  disable_slider: optional(boolean()),
   disable_all_buttons: optional(boolean()),
   disable_menu: optional(boolean()),
   prevent_interaction_on_scroll: optional(boolean()),

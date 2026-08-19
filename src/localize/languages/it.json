@@ -14,6 +14,7 @@
         "disable_menu": "Disabilita menu",
         "disable_battery_warning": "Disabilita avviso batteria",
         "disable_buttons": "Disabilita pulsanti più/meno",
+		"disable_slider": "Disabilita cursore",
         "show_temperature_control": "Mostra controllo temperatura",
         "collapsible_controls": "Controlli comprimibili",
         "show_current_as_primary": "Mostra temperatura attuale come principale",

@@ -14,6 +14,7 @@
         "disable_menu": "Poista valikko käytöstä",
         "disable_battery_warning": "Poista akun varoitus käytöstä",
         "disable_buttons": "Poista plus/miinus -painikkeet käytöstä",
+		"disable_slider": "Poista liukusäädin käytöstä",
         "show_temperature_control": "Näytä lämpötilan säätö",
         "collapsible_controls": "Kokoon taittuvat säätimet",
         "show_current_as_primary": "Näytä nykyinen lämpötila ensisijaisena",
