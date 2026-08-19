@@ -14,6 +14,7 @@
         "disable_menu": "Atspējot izvēlni",
         "disable_battery_warning": "Atspējot baterijas brīdinājumu",
         "disable_buttons": "Atspējot plus/mīnus pogas",
+		"disable_slider": "Atspējot slīdni",
         "show_temperature_control": "Rādīt temperatūras kontroli",
         "collapsible_controls": "Salocāmas vadīklas",
         "show_current_as_primary": "Rādīt pašreizējo temperatūru kā galveno",

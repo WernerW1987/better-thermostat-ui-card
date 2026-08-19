@@ -14,6 +14,7 @@
         "disable_menu": "Menü letiltása",
         "disable_battery_warning": "Akkumulátor figyelmeztetés letiltása",
         "disable_buttons": "Plusz/mínusz gombok letiltása",
+		"disable_slider": "Csúszka letiltása",
         "show_temperature_control": "Hőmérséklet-szabályzó megjelenítése",
         "collapsible_controls": "Összecsukható vezérlők",
         "show_current_as_primary": "Jelenlegi hőmérséklet megjelenítése elsődlegesként",

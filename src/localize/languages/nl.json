@@ -14,6 +14,7 @@
         "disable_menu": "Menu uitschakelen",
         "disable_battery_warning": "Batterijwaarschuwing uitschakelen",
         "disable_buttons": "Plus/min-knoppen uitschakelen",
+		"disable_slider": "Schuifregelaar uitschakelen",
         "show_temperature_control": "Temperatuurregeling tonen",
         "collapsible_controls": "Inklapbare bedieningselementen",
         "show_current_as_primary": "Toon huidige temperatuur als primair",

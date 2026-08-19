@@ -14,6 +14,7 @@
         "disable_menu": "Menüyü devre dışı bırak",
         "disable_battery_warning": "Pil uyarısını devre dışı bırak",
         "disable_buttons": "Artı/eksi düğmelerini devre dışı bırak",
+		"disable_slider": "Kaydırıcıyı devre dışı bırak",
         "show_temperature_control": "Sıcaklık kontrolünü göster",
         "collapsible_controls": "Daraltılabilir kontroller",
         "show_current_as_primary": "Mevcut sıcaklığı birincil olarak göster",

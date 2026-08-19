@@ -15,6 +15,7 @@
         "disable_battery_warning": "Отключить предупреждение о разряде батареи",
         "disable_buttons": "Отключить кнопку плюс/минус",
         "disable_all_buttons": "Отключить все кнопки",
+		    "disable_slider": "Отключить ползунок",
         "show_temperature_control": "Показать управление температурой",
         "collapsible_controls": "Сворачиваемые элементы управления",
         "show_current_as_primary": "Показывать текущую температуру как основную",

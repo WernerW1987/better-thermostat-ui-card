@@ -14,6 +14,7 @@
         "disable_menu": "Dezactivează meniul",
         "disable_battery_warning": "Dezactivează avertizarea bateriei",
         "disable_buttons": "Dezactivează butoanele plus/minus",
+		"disable_slider": "Dezactivează glisorul",
         "show_temperature_control": "Afișează controlul temperaturii",
         "collapsible_controls": "Controale pliabile",
         "show_current_as_primary": "Afișează temperatura curentă ca principală",

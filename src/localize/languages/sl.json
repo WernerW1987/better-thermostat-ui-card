@@ -14,6 +14,7 @@
         "disable_menu": "Onemogoči meni",
         "disable_battery_warning": "Onemogoči opozorilo o bateriji",
         "disable_buttons": "Onemogoči gumbe plus/minus",
+		"disable_slider": "Onemogoči drsnik",
         "show_temperature_control": "Prikaži nadzor temperature",
         "collapsible_controls": "Zložljivi kontrolniki",
         "show_current_as_primary": "Prikaži trenutno temperaturo kot primarno",

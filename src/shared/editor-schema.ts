@@ -27,6 +27,7 @@ export const CLIMATE_LABELS: string[] = [
   "show_current_as_primary",
   "show_secondary",
   "disable_buttons",
+  "disable_slider",
   "disable_all_buttons",
   "disable_menu",
   "prevent_interaction_on_scroll",
@@ -166,6 +167,7 @@ export const computeInteractionSection = (): HaFormSchema =>
         name: "",
         schema: [
           { name: "disable_buttons", selector: { boolean: {} } },
+		  { name: "disable_slider", selector: { boolean: {} } },
           { name: "disable_all_buttons", selector: { boolean: {} } },
           { name: "disable_menu", selector: { boolean: {} } },
           { name: "prevent_interaction_on_scroll", selector: { boolean: {} } },
