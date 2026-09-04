@@ -39,6 +39,17 @@ export interface ClimateFanModesCardFeatureConfig {
   fan_modes?: string[];
 }
 
+// Generic toggle for an arbitrary entity (not the card's own climate
+// entity) — e.g. a display or beep switch that belongs to the same device.
+export interface EntityToggleCardFeatureConfig {
+  type: "entity-toggle";
+  entity: string;
+  name?: string;
+  icon?: string;
+  icon_on?: string;
+  icon_off?: string;
+}
+
 export interface ClimatePresetModesCardFeatureConfig {
   type: "climate-preset-modes";
   style?: "dropdown" | "icons";
