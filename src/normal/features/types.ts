@@ -42,19 +42,14 @@ export interface ClimateFanModesCardFeatureConfig {
   extra_toggles?: EntityToggleItem[];
 }
 
-// Generic row of toggles for arbitrary entities (not the card's own climate
-// entity) — e.g. display/beep switches that belong to the same device.
+// Generic toggle item used within a feature's row (e.g. display/beep
+// switches shown beside another feature like climate-fan-modes).
 export interface EntityToggleItem {
   entity: string;
   name?: string;
   icon?: string;
   icon_on?: string;
   icon_off?: string;
-}
-
-export interface EntityToggleCardFeatureConfig {
-  type: "entity-toggle";
-  toggles: EntityToggleItem[];
 }
 
 export interface ClimatePresetModesCardFeatureConfig {
