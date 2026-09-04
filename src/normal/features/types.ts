@@ -33,6 +33,12 @@ export interface ClimateHvacModesCardFeatureConfig {
   hvac_modes?: string[];
 }
 
+export interface ClimateFanModesCardFeatureConfig {
+  type: "climate-fan-modes";
+  style?: "dropdown" | "icons";
+  fan_modes?: string[];
+}
+
 export interface ClimatePresetModesCardFeatureConfig {
   type: "climate-preset-modes";
   style?: "dropdown" | "icons";
