@@ -1,12 +1,14 @@
 import "./hui-climate-hvac-modes-card-feature";
 import "./hui-climate-preset-modes-card-feature";
 import "./hui-climate-fan-modes-card-feature";
+import "./hui-entity-toggle-card-feature";
 import type { LovelaceCardFeature, LovelaceCardFeatureConfig } from "./types";
 
 const FEATURE_TAGS: Record<string, string> = {
   "climate-hvac-modes": "cts-hui-climate-hvac-modes-card-feature",
   "climate-preset-modes": "cts-hui-climate-preset-modes-card-feature",
   "climate-fan-modes": "cts-hui-climate-fan-modes-card-feature",
+  "entity-toggle": "cts-hui-entity-toggle-card-feature",
 };
 
 export const getCardFeatureTag = (type?: string): string | undefined =>
