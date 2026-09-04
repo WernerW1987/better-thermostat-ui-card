@@ -4,6 +4,9 @@ export interface ExternalSensorsConfig {
   window_sensor?: string;
   humidity_sensor?: string;
   disable_humidity?: boolean;
+  // Optional standalone sensor (e.g. an external DHT22) shown as an
+  // extra readout regardless of what the climate entity itself reports.
+  extra_temperature_entity?: string;
 }
 
 // Better Thermostat entities always expose `call_for_heat`; anything else is
@@ -69,5 +72,20 @@ export function formatHumidity(
       return hass.formatEntityState(sensor);
     }
   }
+  return undefined;
+}
+
+// Formats an independent temperature sensor (e.g. an external DHT22)
+// configured via extra_temperature_entity, shown alongside — not instead
+// of — the climate entity's own reading.
+export function formatExtraTemperature(
+  hass: HomeAssistant | undefined,
+  config?: ExternalSensorsConfig,
+): string | undefined {
+  if (!hass || !config?.extra_temperature_entity) return undefined;
+  const sensor = hass.states?.[config.extra_temperature_entity];
+  if (!sensor || isNaN(Number(sensor.state))) return undefined;
+  return hass.formatEntityState(sensor);
+}
   return undefined;
 }
