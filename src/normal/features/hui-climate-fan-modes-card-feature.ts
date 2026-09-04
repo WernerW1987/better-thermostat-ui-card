@@ -2,6 +2,7 @@ import type { PropertyValues } from "lit";
 import { LitElement, css, html, nothing } from "lit";
 import { customElement, property, state } from "lit/decorators.js";
 import { styleMap } from "lit/directives/style-map.js";
+import { classMap } from "lit/directives/class-map.js";
 import "../components/cts-ha-control-select";
 import type { ControlSelectOption } from "../components/cts-ha-control-select";
 import { BtClimateEntity, UNAVAILABLE } from "../../shared/climate";
@@ -10,6 +11,7 @@ import { climateStateColor } from "../../shared/climate-colors";
 import { filterModes } from "./types";
 import type {
   ClimateFanModesCardFeatureConfig,
+  EntityToggleItem,
   LovelaceCardFeature,
   LovelaceCardFeatureContext,
 } from "./types";
@@ -131,6 +133,34 @@ export class HuiClimateFanModesCardFeature
       });
   }
 
+  private _toggleEntity = (entityId: string) => {
+    if (!this.hass) return;
+    this.hass.callService("homeassistant", "toggle", {
+      entity_id: entityId,
+    });
+  };
+
+  private _renderExtraToggle(item: EntityToggleItem) {
+    const stateObj = this.hass?.states[item.entity];
+    if (!stateObj) return nothing;
+
+    const isOn = stateObj.state === "on";
+    const icon = isOn
+      ? item.icon_on ?? item.icon ?? "mdi:toggle-switch"
+      : item.icon_off ?? item.icon ?? "mdi:toggle-switch-off";
+
+    return html`
+      <button
+        class=${classMap({ "extra-toggle": true, active: isOn })}
+        @click=${() => this._toggleEntity(item.entity)}
+        .disabled=${stateObj.state === "unavailable"}
+        title=${item.name ?? stateObj.attributes.friendly_name ?? item.entity}
+      >
+        <ha-icon .icon=${icon}></ha-icon>
+      </button>
+    `;
+  }
+
   protected render() {
     if (
       !this._config ||
@@ -154,18 +184,27 @@ export class HuiClimateFanModesCardFeature
       icon: html`<ha-icon .icon=${getFanModeIcon(mode)}></ha-icon>`,
     }));
 
+    const extraToggles = this._config.extra_toggles ?? [];
+
     return html`
-      <cts-ha-control-select
-        .options=${options}
-        .value=${this._currentFanMode}
-        @value-changed=${this._valueChanged}
-        hide-option-label
-        .label=${"Fan mode"}
-        style=${styleMap({
-          "--control-select-color": climateStateColor(stateObj),
-        })}
-        .disabled=${stateObj.state === UNAVAILABLE}
-      ></cts-ha-control-select>
+      <div class="row">
+        <cts-ha-control-select
+          .options=${options}
+          .value=${this._currentFanMode}
+          @value-changed=${this._valueChanged}
+          hide-option-label
+          .label=${"Fan mode"}
+          style=${styleMap({
+            "--control-select-color": climateStateColor(stateObj),
+          })}
+          .disabled=${stateObj.state === UNAVAILABLE}
+        ></cts-ha-control-select>
+        ${extraToggles.length > 0
+          ? html`<div class="extra-toggles">
+              ${extraToggles.map((item) => this._renderExtraToggle(item))}
+            </div>`
+          : nothing}
+      </div>
     `;
   }
 
@@ -178,6 +217,46 @@ export class HuiClimateFanModesCardFeature
       --control-select-border-radius: 12px;
       --control-select-button-border-radius: 10px;
       --mdc-icon-size: 20px;
+    }
+    .row {
+      display: flex;
+      gap: 4px;
+      align-items: stretch;
+    }
+    .row > cts-ha-control-select {
+      flex: 1;
+      min-width: 0;
+    }
+    .extra-toggles {
+      display: flex;
+      gap: 4px;
+      flex-shrink: 0;
+    }
+    button.extra-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border: none;
+      border-radius: 10px;
+      background: var(--disabled-color, rgba(127, 127, 127, 0.2));
+      color: var(--secondary-text-color);
+      cursor: pointer;
+      transition:
+        background 180ms ease,
+        color 180ms ease;
+    }
+    button.extra-toggle.active {
+      background: var(
+        --feature-color,
+        var(--state-icon-color, var(--primary-color))
+      );
+      color: var(--text-primary-color, white);
+    }
+    button.extra-toggle:disabled {
+      opacity: 0.5;
+      cursor: default;
     }
   `;
 }
