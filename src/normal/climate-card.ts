@@ -50,7 +50,7 @@ import {
   getHvacModeIcon,
 } from "../shared/climate-colors";
 import { alphaColor } from "../shared/color";
-import { findBtStubEntity, formatHumidity, isWindowOpen } from "../shared/bt";
+import { findBtStubEntity, formatHumidity, formatExtraTemperature, isWindowOpen } from "../shared/bt";
 import {
   getErrorEntityId,
   getLowBattery,
@@ -548,7 +548,7 @@ export class BetterThermostatUINormalCard
                 showCurrentAsBig,
               )}${this._renderSecondary(
                 showCurrentAsBig,
-              )}${this._renderHumidity()}
+              )}${this._renderHumidity()}${this._renderExtraTemperature()}
             </div>
             ${!this._config.disable_buttons &&
             (this._supportsTargetValue || this._supportsTargetRange)
@@ -888,6 +888,18 @@ export class BetterThermostatUINormalCard
       <p class="label secondary humidity">
         <ha-svg-icon .path=${mdiWaterPercent}></ha-svg-icon>
         ${humidityDisplay}&nbsp;
+      </p>
+    `;
+  }
+
+  private _renderExtraTemperature() {
+    const display = formatExtraTemperature(this.hass, this._config);
+    if (!display) return nothing;
+
+    return html`
+      <p class="label secondary extra-temperature">
+        <ha-svg-icon .path=${mdiThermometer}></ha-svg-icon>
+        ${display}&nbsp;
       </p>
     `;
   }
