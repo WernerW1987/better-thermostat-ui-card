@@ -18,6 +18,9 @@ export type SharedBtCardConfig = {
   collapsible_controls?: boolean;
   show_current_as_primary?: boolean;
   show_secondary?: boolean;
+  // Optional secondary sensor entity (e.g. an external temperature/
+  // humidity sensor) shown as an extra line below the main readouts.
+  extra_temperature_entity?: string;
   disable_buttons?: boolean;
   disable_slider?: boolean;
   disable_all_buttons?: boolean;
@@ -61,4 +64,5 @@ export const sharedBtConfigStruct = object({
   debug_degraded: optional(boolean()),
   window_sensor: optional(string()),
   humidity_sensor: optional(string()),
+  extra_temperature_entity: optional(string()),
 });

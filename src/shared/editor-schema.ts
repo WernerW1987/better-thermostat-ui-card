@@ -43,6 +43,7 @@ export const CLIMATE_LABELS: string[] = [
   "low_battery_threshold",
   "window_sensor",
   "humidity_sensor",
+  "extra_temperature_entity",
   "section_display",
   "section_interaction",
   "section_features",
@@ -67,6 +68,10 @@ export const computeSensorsSection = (): HaFormSchema =>
       {
         name: "humidity_sensor",
         selector: { entity: { domain: ["sensor"], device_class: "humidity" } },
+      },
+      {
+        name: "extra_temperature_entity",
+        selector: { entity: { domain: ["sensor"], device_class: "temperature" } },
       },
     ],
   }) as any;
