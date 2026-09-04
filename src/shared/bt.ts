@@ -55,10 +55,6 @@ export function formatHumidity(
 ): string | undefined {
   if (!hass || config?.disable_humidity) return undefined;
   if (stateObj?.attributes?.current_humidity != null) {
-    // Unlike a sensor entity (formatted below with the user's registry
-    // display-precision), the climate attribute carries the integration's
-    // raw value and has no precision setting — some integrations report
-    // "58.49". Whole percent is the sensible display for relative humidity.
     const humidity = Number(stateObj.attributes.current_humidity);
     return hass.formatEntityAttributeValue(
       stateObj,
@@ -76,8 +72,8 @@ export function formatHumidity(
 }
 
 // Formats an independent temperature sensor (e.g. an external DHT22)
-// configured via extra_temperature_entity, shown alongside — not instead
-// of — the climate entity's own reading.
+// configured via extra_temperature_entity, shown alongside - not instead
+// of - the climate entity's own reading.
 export function formatExtraTemperature(
   hass: HomeAssistant | undefined,
   config?: ExternalSensorsConfig,
@@ -86,6 +82,4 @@ export function formatExtraTemperature(
   const sensor = hass.states?.[config.extra_temperature_entity];
   if (!sensor || isNaN(Number(sensor.state))) return undefined;
   return hass.formatEntityState(sensor);
-}
-  return undefined;
 }
